@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "storybook"
+    }
+  },
+  "defaultProject": "storybook",
+  "cli": {
+    "analytics": false
+  }
 }
