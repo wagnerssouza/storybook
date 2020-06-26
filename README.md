@@ -50,9 +50,13 @@ storiesOf('Buttons', module)
   .add('Button - Default', ButtonStorie)
 ```
 
-### 8. Fim
+### 8. Executando em localhost
 
-rodar projeto angular
+Para executar em localhost seu projeto, abra duas abas do seu terminal.
+
+Angular - `http://localhost:4200` - comando `ng serve`  
+Storybook - `http://localhost:6006` comando `npm run storybook`
+
 ng serve  
 rodar storybook
 npm run storybook
