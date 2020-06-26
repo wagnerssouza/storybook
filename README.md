@@ -55,5 +55,7 @@ storiesOf('Buttons', module)
 Para executar em localhost seu projeto, abra duas abas do seu terminal.
 
 Angular - `http://localhost:4200` - comando `ng serve`  
-Storybook - `http://localhost:6006` comando `npm run storybook`
+Storybook - `http://localhost:6006` comando `npm run storybook`  
+
+Veja um exemplo aqui [https://wagnerssouza.github.io/storybook/](https://wagnerssouza.github.io/storybook/)
 
