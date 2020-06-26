@@ -37,8 +37,11 @@ Em `src/stories` você pode criar seus arquivos para agrupar stories.
 A própria instalação do storybook cria 2 deles:
 `0-Welcome.stories.ts` e `1-Button.stories.ts`
 
-### 7. dentro desse arquivo criado acima importe seus stories separadamente
-acesse o arquivo `1-Button.stories.ts` que foi criado quando adicionamos o storybook no nosso projeto.
+### 7. Agrupando `stories`
+acesse o arquivo `1-Button.stories.ts` em `src/stories` que foi criado quando adicionamos o storybook no nosso projeto.  
+
+Apague todo o conteúdo e adicione o código abaixo:
+
 ```javascript
 import { storiesOf } from '@storybook/angular';
 import { ButtonStorie } from 'src/app/button/button.stories';
