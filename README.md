@@ -57,6 +57,3 @@ Para executar em localhost seu projeto, abra duas abas do seu terminal.
 Angular - `http://localhost:4200` - comando `ng serve`  
 Storybook - `http://localhost:6006` comando `npm run storybook`
 
-ng serve  
-rodar storybook
-npm run storybook
