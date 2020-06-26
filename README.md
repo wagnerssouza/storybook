@@ -15,7 +15,7 @@ Vamos criar um simples componente `button`, ele também servirá para a  exibiç
 
 Acesse `cd src/app` e para criar o component: `ng g c button`  
 Você pode ver a estrura do componente criado aqui:  
-`caminho github do component`
+[https://github.com/wagnerssouza/storybook/tree/master/src/app/button](https://github.com/wagnerssouza/storybook/tree/master/src/app/button)
 
 ### 4. Criando arquivo .stories
 Na estrutura do componente `button` que acabamos de criar, vamos adicionar nossa storie. 
@@ -29,7 +29,7 @@ export const ButtonStorie = () => ({
   component:  ButtonComponent,
 });
 ```
-`link do github do button.stories`
+[https://github.com/wagnerssouza/storybook/blob/master/src/app/button/button.stories.ts](https://github.com/wagnerssouza/storybook/blob/master/src/app/button/button.stories.ts)
 
 ### 6. Acesse o diretório `src/stories` e crie seus arquivos `.stories`
 Em `src/stories` você pode criar seus arquivos para agrupar stories.
