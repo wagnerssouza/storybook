@@ -8,14 +8,15 @@
 Digite: `cd storybook` e depois `npx -p @storybook/cli sb init` 
 
 Para maiores informações, acesse:  
-`https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/`
+[https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/](https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/)
 
 ### 3. Crie um simples componente
-Vamos criar um simples componente para exibição no storybook
+Vamos criar um simples componente `button`, ele também servirá para a  exibição no storybook
 
 Acesse `cd src/app`  
 Para criar o component: `ng g c button`  
-Você pode ver a estrura do componente criado aqui: `caminho github do component`
+Você pode ver a estrura do componente criado aqui:  
+`caminho github do component`
 
 ### 4. Criando arquivo .stories
 Na estrutura do componente `button` que acabamos de criar, vamos adicionar nossa storie. 
