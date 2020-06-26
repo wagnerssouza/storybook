@@ -27,7 +27,7 @@ Crie um arquivo, por ex: `button.stories.ts`. O nome do arquivo precisa necessar
 ```javascript
 import { ButtonComponent } from  './button.component';
 export const ButtonStorie = () => ({
-	component:  ButtonComponent,
+  component:  ButtonComponent,
 });
 ```
 `link do github do button.stories`
