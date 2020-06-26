@@ -1,28 +1,26 @@
 
 # Storybook
 
-### 1. Criar um projeto Angular 
+### 1. Crie um projeto Angular 
 `npx -p @angular/cli ng new storybook`  
  
-### 2. Adicionar storybook no projeto
-`cd storybook`  
-e depois  
-`npx -p @storybook/cli sb init` 
+### 2. Adicione o storybook ao projeto
+Digite: `cd storybook` e depois `npx -p @storybook/cli sb init` 
 
 Para maiores informações, acesse:  
 `https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/`
 
-### 3. Criar um componente simples
-Criei um simples componente para mostrar o fluxo completo desde a criação de um simples componente como sua exibição dentro do storybook.
+### 3. Crie um simples componente
+Vamos criar um simples componente para exibição no storybook
 
-Acesse `src/app`  
-Para criar o component: `ng g c button`
-`caminho github do component`
+Acesse `cd src/app`  
+Para criar o component: `ng g c button`  
+Você pode ver a estrura do componente criado aqui: `caminho github do component`
 
 ### 4. Criando arquivo .stories
 Na estrutura do componente `button` que acabamos de criar, vamos adicionar nossa storie. 
 
-Crie um arquivo, por ex: button.stories.ts. O nome do arquivo precisa necessariamente ter [.stories.ts].
+Crie um arquivo, por ex: `button.stories.ts`. O nome do arquivo precisa necessariamente ter `.stories.ts`.
 
 ### 5. Criando uma storie simples
 ```javascript
