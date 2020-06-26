@@ -1,27 +1,59 @@
+
 # Storybook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+### 1. Crie um projeto Angular 
+`npx -p @angular/cli ng new storybook`  
+ 
+### 2. Adicione o storybook ao projeto
+Digite: `cd storybook` e depois `npx -p @storybook/cli sb init` 
 
-## Development server
+Para maiores informações, acesse:  
+[https://www.learnstorybook.com/intro-to-storybook/angular/pt/get-started/](https://www.learnstorybook.com/intro-to-storybook/angular/pt/get-started/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 3. Crie um simples componente
+Vamos criar um simples componente `button`, ele também servirá para a  exibição no storybook
 
-## Code scaffolding
+Acesse `cd src/app` e para criar o component: `ng g c button`  
+Você pode ver a estrura do componente criado aqui:  
+`caminho github do component`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 4. Criando arquivo .stories
+Na estrutura do componente `button` que acabamos de criar, vamos adicionar nossa storie. 
 
-## Build
+Crie um arquivo, por ex: `button.stories.ts`. O nome do arquivo precisa necessariamente ter `.stories.ts`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 5. Criando uma storie simples
+```javascript
+import { ButtonComponent } from  './button.component';
+export const ButtonStorie = () => ({
+  component:  ButtonComponent,
+});
+```
+`link do github do button.stories`
 
-## Running unit tests
+### 6. Acesse o diretório `src/stories` e crie seus arquivos `.stories`
+Em `src/stories` você pode criar seus arquivos para agrupar stories.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A própria instalação do storybook cria 2 deles:
+`0-Welcome.stories.ts` e `1-Button.stories.ts`
 
-## Running end-to-end tests
+### 7. Agrupando `stories`
+acesse o arquivo `1-Button.stories.ts` em `src/stories` que foi criado quando adicionamos o storybook no nosso projeto.  
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Apague todo o conteúdo e adicione o código abaixo:
 
-## Further help
+```javascript
+import { storiesOf } from '@storybook/angular';
+import { ButtonStorie } from 'src/app/button/button.stories';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+storiesOf('Buttons', module)
+  .add('Button - Default', ButtonStorie)
+```
+
+### 8. Executando em localhost
+
+Para executar em localhost seu projeto, abra duas abas do seu terminal.
+
+Angular - `http://localhost:4200` - comando `ng serve`  
+Storybook - `http://localhost:6006` comando `npm run storybook`
+
