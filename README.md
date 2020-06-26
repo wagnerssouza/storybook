@@ -8,13 +8,12 @@
 Digite: `cd storybook` e depois `npx -p @storybook/cli sb init` 
 
 Para maiores informações, acesse:  
-[https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/](https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/)
+[https://www.learnstorybook.com/intro-to-storybook/angular/pt/get-started/](https://www.learnstorybook.com/intro-to-storybook/angular/pt/get-started/)
 
 ### 3. Crie um simples componente
 Vamos criar um simples componente `button`, ele também servirá para a  exibição no storybook
 
-Acesse `cd src/app`  
-Para criar o component: `ng g c button`  
+Acesse `cd src/app` e para criar o component: `ng g c button`  
 Você pode ver a estrura do componente criado aqui:  
 `caminho github do component`
 
@@ -32,7 +31,7 @@ export const ButtonStorie = () => ({
 ```
 `link do github do button.stories`
 
-### 6. Ir até o diretório stories e criar se arquivo de stories para juntar stories da mesma categoria
+### 6. Acesse o diretório `src/stories` e crie seus arquivos `.stories`
 Em `src/stories` você pode criar seus arquivos para agrupar stories.
 
 A própria instalação do storybook cria 2 deles:
